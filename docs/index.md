@@ -1,37 +1,22 @@
-## Welcome to Dash+
+# Welcome to Dash+
 
-You can use the [editor on GitHub](https://github.com/WatForm/dashplus.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Dash+ is a declarative behavioural modelling language for software-based systems, meaning a model in Dash describes a transition system.  It combines Statecharts-like hierarchical and concurrent control states with the Alloy language for describing guards and actions on individual transitions.  It is an extension of the Alloy language therefore statements in pure Alloy can be combined with the description of the transition system in Dash+.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Tool Support
 
-### Markdown
+Verification tool support (model checking and model instance generation) for Dash+ has been created as an extension to the Alloy Analyzer.  It can be found at:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Dash+ fork of the Alloy Analyzer](https://github.com/WatForm/org.alloytools.alloy)
 
-```markdown
-Syntax highlighted code block
+We also have a simulator for models of Alloy transition systems:
 
-# Header 1
-## Header 2
-### Header 3
+[ALDB] (https://github.com/WatForm/aldb)
 
-- Bulleted
-- List
+## Language Description
 
-1. Numbered
-2. List
+## Well-formedness Constraints
 
-**Bold** and _Italic_ and `Code` text
+## Credits and Support
 
-[Link](url) and ![Image](src)
-```
+Dash+ was created by Jose Serna and Nancy Day.  It is currently supported by Tamjid Hossain (t7hossain@uwaterloo.ca) and Nancy Day (nday@uwaterloo.ca). Issues with respect to Dash's tool support can be posted on Issues page of (https://github.com/WatForm/org.alloytools.alloy/issues).  Discussions regarding the language and tool support can be posted on (https://github.com/WatForm/org.alloytools.alloy/discussions).
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WatForm/dashplus.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
