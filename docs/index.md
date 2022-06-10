@@ -62,6 +62,8 @@ More details can be found in:
 * Jose Serna. Dash: Declarative Behavioural Modelling in Alloy. MMath thesis, University of Waterloo, David R. Cheriton School of Computer Science, 2019. [https://cs.uwaterloo.ca/~nday/pdf/theses/2019-01-jserna-mmath-thesis.pdf]
 
 
+## Writing Properties in Alloy
+
 To write properties of Dash models to run/check, it is important to know a little bit about how Dash is translated to Alloy:
 - the signature of system states is called 'Snapshot' 
 - elements of the transition system are prefixed by the sequence of labelled parent states, e.g., for the above model
@@ -76,7 +78,7 @@ To write properties of Dash models to run/check, it is important to know a littl
 	+ in the future, we plan to create output for Electrum-base model checking
 - to only check the property at stable snapshots, use the boolean s.stable where s is a snapshot (stable is only relevant if there are concurrent states)
 - if you need a scope for the EventLabel, count the number of events declared in the model. If you need a scope for the StateLabel, count the number of basic states declared in the model.
-- 
+
 ## Well-formedness Constraints
 
 ## Credits and Support
