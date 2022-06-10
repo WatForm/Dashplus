@@ -11,6 +11,8 @@ It is an extension of the Alloy language therefore statements in pure Alloy can 
 
 The meaning of the name is 'Declarative Abstract State Hierarchy'.  The '+' was added when we added replicated concurrent control states.
 
+These web pages are under development!
+
 ## Tool Support
 
 Verification tool support (model checking and model instance generation) for Dash+ has been created as an extension to the Alloy Analyzer.  It can be found at: [Dash+ fork of the Alloy Analyzer](https://github.com/WatForm/org.alloytools.alloy)
@@ -66,9 +68,31 @@ conc state Root { // root state is always concurrent
 }
 ```
 
-More details can be found in: 
-* The above example is available in the file sample.dsh in the root directory.
-* Jose Serna. Dash: Declarative Behavioural Modelling in Alloy. MMath thesis, University of Waterloo, David R. Cheriton School of Computer Science, 2019. [https://cs.uwaterloo.ca/~nday/pdf/theses/2019-01-jserna-mmath-thesis.pdf]
+### Semantics
+
+A Dash+ model is a transition system meaning it the changing behaviour of variables over time/executions/traces.  A Dash+ model consists of 1) a Snapshot, which is a set of variables whose values change over time and 2) a set of transitions, each of which can cause some changes to the set of variables.  There can also be constants whose values do not change over time (described in pure Alloy).  
+
+We can translate a Dash model into a CoreDash model, which completely separates the state hierarchy from the transitions and uses fully qualified names in the transitions.
+
+* choosing a transition in each step
+* priority of transitions
+* stuttering
+
+### Name Spaces
+
+```
+conc state Bit1 {
+	default state Bit1 {}
+}
+```
+
+### Syntactic Sugar
+
+* Transition Comprehension
+	- scope of *
+
+* Transition Defintions
+
 
 
 ## Writing Properties in Alloy
@@ -89,6 +113,8 @@ To write properties of Dash models to run/check, it is important to know a littl
 - if you need a scope for the EventLabel, count the number of events declared in the model. If you need a scope for the StateLabel, count the number of basic states declared in the model.
 
 ## Well-formedness Constraints
+
+* The source and destinations of states must be OR-states.
 
 ## Credits and Support
 
