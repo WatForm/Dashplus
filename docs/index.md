@@ -1,6 +1,13 @@
 # Welcome to Dash+
 
-Dash+ is a declarative behavioural modelling language for software-based systems, meaning a model in Dash describes a transition system.  It combines Statecharts-like hierarchical and concurrent control states with the Alloy language for describing guards and actions on individual transitions.  It is an extension of the Alloy language therefore statements in pure Alloy can be combined with the description of the transition system in Dash+. 
+Dash+ is a declarative behavioural modelling language for software-based systems, meaning a model in Dash describes a transition system.  
+Dash is an extension of Alloy. It combines the control-oriented constructs of Statecharts with the 
+declarative modelling of Alloy.
+From Statecharts, Dash inherits a means to specify hierarchy, concurrency, and 
+communication, three useful aspects to describe the behaviour of reactive systems.
+From Alloy, Dash uses the expressiveness of relational logic and set theory to 
+abstractly and declaratively describe structures, data, and operations.
+It is an extension of the Alloy language therefore statements in pure Alloy can be combined with the description of the transition system in Dash+. 
 
 The meaning of the name is 'Declarative Abstract State Hierarchy'.  The '+' was added when we added replicated concurrent control states.
 
