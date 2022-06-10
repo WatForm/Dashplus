@@ -1,6 +1,8 @@
 # Welcome to Dash+
 
-Dash+ is a declarative behavioural modelling language for software-based systems, meaning a model in Dash describes a transition system.  It combines Statecharts-like hierarchical and concurrent control states with the Alloy language for describing guards and actions on individual transitions.  It is an extension of the Alloy language therefore statements in pure Alloy can be combined with the description of the transition system in Dash+.
+Dash+ is a declarative behavioural modelling language for software-based systems, meaning a model in Dash describes a transition system.  It combines Statecharts-like hierarchical and concurrent control states with the Alloy language for describing guards and actions on individual transitions.  It is an extension of the Alloy language therefore statements in pure Alloy can be combined with the description of the transition system in Dash+. 
+
+The meaning of the name is 'Declarative Abstract State Hierarchy'.  The '+' was added when we added replicated concurrent control states.
 
 ## Tool Support
 
@@ -83,5 +85,17 @@ To write properties of Dash models to run/check, it is important to know a littl
 
 ## Credits and Support
 
-Dash+ was created by Jose Serna and Nancy Day.  It is currently supported by Tamjid Hossain (t7hossain@uwaterloo.ca) and Nancy Day (nday@uwaterloo.ca). Issues with respect to Dash's tool support can be posted on the [Issues page](https://github.com/WatForm/org.alloytools.alloy/issues).  Discussions regarding the language and tool support can be posted on the [Discussions page](https://github.com/WatForm/org.alloytools.alloy/discussions).
+The Dash language was created by Jose Serna and Nancy Day. The integration of Dash within the Alloy Analyzer was completed by Tamjid Hossain.  Kai Hsiang Yang contributed to the integration with the GUI.  Nancy Day provided guidance on the implementation.  Information on Dash can be found in:
+
+* Jose Serna. Dash: Declarative Behavioural Modelling in Alloy. MMath thesis, University of Waterloo, David R. Cheriton School of Computer Science, 2019. [https://cs.uwaterloo.ca/~nday/pdf/theses/2019-01-jserna-mmath-thesis.pdf]
+* Jose Serna, Nancy A. Day, and Sabria Farheen. Dash: A new language for declarative behavioural requirements with control state hierarchy. In International Workshop on Model-Driven Requirements Engineering (MoDRE) @ IEEE International Requirements Engineering Conference (RE), pages 64--68. IEEE Computer Society, September 2017. [https://cs.uwaterloo.ca/~nday/pdf/refereed/2017-SeDaFa-modre.pdf]
+* Amin Bandali. A Comprehensive Study of Declarative Modelling Languages. MMath thesis, University of Waterloo, David R. Cheriton School of Computer Science, 2020. [https://cs.uwaterloo.ca/~nday/pdf/theses/2020-07-15-bandali-mmath-thesis.pdf]
+* Ali Abbassi, Amin Bandali, Nancy A. Day, and Jose Serna. A comparison of the declarative modelling languages B, Dash, and TLA+. In International Workshop on Model-Driven Requirements Engineering (MoDRE) @ IEEE International Requirements Engineering Conference (RE), pages 11--20. IEEE Computer Society, August 2018. [https://cs.uwaterloo.ca/~nday/pdf/refereed/2018-AbBa-modre.pdf]
+
+Dash continues to be developed.  Extensions to Dash are discussed in:
+* Tamjid Hossain and Nancy A. Day. Dash+: Extending alloy with hierarchical states and replicated processes for modelling transition systems. In International Workshop on Model-Driven Requirements Engineering (MoDRE) @ IEEE International Requirements Engineering Conference (RE). IEEE, September 2021. [https://cs.uwaterloo.ca/~nday/pdf/refereed/2021-HoDa-modre.pdf]
+
+## Support
+
+Dash+ is currently supported by Tamjid Hossain (t7hossain@uwaterloo.ca) and Nancy Day (nday@uwaterloo.ca). Issues with respect to Dash's tool support can be posted on the [Issues page](https://github.com/WatForm/org.alloytools.alloy/issues).  Discussions regarding the language and tool support can be posted on the [Discussions page](https://github.com/WatForm/org.alloytools.alloy/discussions).
 
