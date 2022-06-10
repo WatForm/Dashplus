@@ -1,2 +1,2 @@
-# dashplus.github.io
+# Dash+
 Documentation for Dash+
