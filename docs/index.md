@@ -15,7 +15,7 @@ We also have a simulator for models of Alloy transition systems:
 
 Dash extends Alloy with keywords to describe transitions in a hierarchical, concurrent state machines (similar to Statecharts).  Here is a small example:
 ```
-sig Value {}
+sig Value {} // regular Alloy declaration
 
 conc state Root { // root state is always concurrent
 	event ev1 {} 
@@ -87,12 +87,18 @@ To write properties of Dash models to run/check, it is important to know a littl
 
 The Dash language was created by Jose Serna and Nancy Day. The integration of Dash within the Alloy Analyzer was completed by Tamjid Hossain.  Kai Hsiang Yang contributed to the integration with the GUI.  Nancy Day provided guidance on the implementation.  Information on Dash can be found in:
 
+* Jose Serna, Nancy A. Day, and Shahram Esmaeilsabzali. Dash: Declarative behavioural modelling in Alloy with control state hierarchy. Journal of Software and Systems Modelling, Accepted Apr 2022.
+
 * Jose Serna. Dash: Declarative Behavioural Modelling in Alloy. MMath thesis, University of Waterloo, David R. Cheriton School of Computer Science, 2019. [https://cs.uwaterloo.ca/~nday/pdf/theses/2019-01-jserna-mmath-thesis.pdf]
+
 * Jose Serna, Nancy A. Day, and Sabria Farheen. Dash: A new language for declarative behavioural requirements with control state hierarchy. In International Workshop on Model-Driven Requirements Engineering (MoDRE) @ IEEE International Requirements Engineering Conference (RE), pages 64--68. IEEE Computer Society, September 2017. [https://cs.uwaterloo.ca/~nday/pdf/refereed/2017-SeDaFa-modre.pdf]
+
 * Amin Bandali. A Comprehensive Study of Declarative Modelling Languages. MMath thesis, University of Waterloo, David R. Cheriton School of Computer Science, 2020. [https://cs.uwaterloo.ca/~nday/pdf/theses/2020-07-15-bandali-mmath-thesis.pdf]
+
 * Ali Abbassi, Amin Bandali, Nancy A. Day, and Jose Serna. A comparison of the declarative modelling languages B, Dash, and TLA+. In International Workshop on Model-Driven Requirements Engineering (MoDRE) @ IEEE International Requirements Engineering Conference (RE), pages 11--20. IEEE Computer Society, August 2018. [https://cs.uwaterloo.ca/~nday/pdf/refereed/2018-AbBa-modre.pdf]
 
 Dash continues to be developed.  Extensions to Dash are discussed in:
+
 * Tamjid Hossain and Nancy A. Day. Dash+: Extending alloy with hierarchical states and replicated processes for modelling transition systems. In International Workshop on Model-Driven Requirements Engineering (MoDRE) @ IEEE International Requirements Engineering Conference (RE). IEEE, September 2021. [https://cs.uwaterloo.ca/~nday/pdf/refereed/2021-HoDa-modre.pdf]
 
 ## Support
