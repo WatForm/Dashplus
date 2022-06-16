@@ -68,6 +68,7 @@ conc state Root { // root state is always concurrent
 }
 ```
 
+
 ### Semantics
 
 A Dash+ model is a transition system meaning it the changing behaviour of variables over time/executions/traces.  A Dash+ model consists of 1) a Snapshot, which is a set of variables whose values change over time and 2) a set of transitions, each of which can cause some changes to the set of variables.  There can also be constants whose values do not change over time (described in pure Alloy).  
@@ -77,6 +78,8 @@ We can translate a Dash model into a CoreDash model, which completely separates 
 * choosing a transition in each step
 * priority of transitions
 * stuttering
+
+* Invariants states within a state holds whenever the model is in that control state.
 
 ### Name Spaces
 
@@ -114,7 +117,12 @@ To write properties of Dash models to run/check, it is important to know a littl
 
 ## Well-formedness Constraints
 
-* The source and destinations of states must be OR-states.
+* The source and destination of a transition must be an OR-state or a basic state.
+* An assignment to an environmental variable or environmental events is not allowed.
+* At a particular level in the hierarchy all states must be either OR states or AND states.
+* Primed variables can only be used in actions (not guards).
+
+
 
 ## Credits and Support
 
