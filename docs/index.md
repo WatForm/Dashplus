@@ -122,7 +122,10 @@ To write properties of Dash models to run/check, it is important to know a littl
 * At a particular level in the hierarchy all states must be either OR states or AND states.
 * Primed variables can only be used in actions (not guards).
 
+## Optimizations in the Translation to Alloy
 
+* If there are no events used in the model, the signatures and snapshot relations for events are not included.
+* If the model does not have any AND-states, then every snapshot is stable, which simplifies many predicate definitions in the Alloy output from the translation and the stable flag is removed from the snapshot relations.
 
 ## Credits and Support
 
