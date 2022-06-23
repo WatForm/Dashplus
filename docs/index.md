@@ -121,6 +121,7 @@ To write properties of Dash models to run/check, it is important to know a littl
 * An assignment to an environmental variable or environmental events is not allowed.
 * At a particular level in the hierarchy all states must be either OR states or AND states.
 * Primed variables can only be used in actions (not guards).
+* At each level in the hierarchy that consists of OR-states and basic states, there must be a default state.
 
 ## Optimizations in the Translation to Alloy
 
